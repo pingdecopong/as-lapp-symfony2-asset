@@ -1,0 +1,28 @@
+DEPENDENCIES
+  as-lapp-symfony2-asset
+    path: .
+    metadata: true
+
+GRAPH
+  as-apache2 (0.0.7)
+  as-asset (0.0.1)
+    yum-epel (>= 0.0.0)
+    yum-remi (>= 0.0.0)
+  as-lapp-symfony2-asset (0.0.1)
+    as-apache2 (>= 0.0.0)
+    as-asset (>= 0.0.0)
+    as-php (>= 0.0.0)
+    as-postgresql (>= 0.0.0)
+    as-symfony2 (>= 0.0.0)
+  as-php (0.0.3)
+    yum-epel (>= 0.0.0)
+    yum-remi (>= 0.0.0)
+  as-postgresql (0.0.1)
+  as-symfony2 (0.0.2)
+    as-apache2 (>= 0.0.0)
+    as-php (>= 0.0.0)
+  yum (3.6.1)
+  yum-epel (0.6.0)
+    yum (~> 3.0)
+  yum-remi (0.1.0)
+    yum (>= 0.0.0)
